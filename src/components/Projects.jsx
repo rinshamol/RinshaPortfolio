@@ -5,34 +5,30 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Recipe App",
+      title: "Recipe Finder App",
       description:
-        "A responsive React-based recipe application that lets users search, explore, and view detailed cooking instructions and ingredients using real-time API data.",
-     
-      technologies: ["React", "Vite", "JavaScript (ES6+)", "CSS Modules", "HTML5", "Spoonacular API", "Git", "GitHub" ],
-      github: "https://github.com/rinshamol/RecipeApp.git",
-      // live: "https://your-ecommerce-demo.com",
+        "A responsive React-based recipe finder that lets users search, explore, and view detailed cooking instructions, ingredients, and nutritional info using real-time Spoonacular API data.",
+      technologies: [
+        "React",
+        "Vite",
+        "JavaScript (ES6+)",
+        "CSS Modules",
+        "Spoonacular API",
+        "Git",
+        "GitHub",
+      ],
+      github: "https://github.com/rinshamol/RecipeApp",
+      live: "https://recipe-app-one-liard.vercel.app/",
     },
     {
-      title: "Task Management App",
+      title: "Dropbox Clone",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image:
-        "https://via.placeholder.com/400x250/059669/FFFFFF?text=Task+Manager",
-      technologies: ["React", "Firebase", "Tailwind CSS"],
-      github: "https://github.com/yourusername/taskmanager",
-      live: "https://your-taskmanager-demo.com",
+        "A static front-end clone of Dropbox built with HTML, CSS, and JavaScript, replicating the core UI and layout of the Dropbox interface.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Git", "GitHub"],
+      github: "https://github.com/rinshamol/Static-Dropbox",
+      live: "https://r1-dropbo-clone.netlify.app",
     },
-    {
-      title: "Weather Dashboard",
-      description:
-        "A responsive weather dashboard that displays current weather and forecasts using multiple APIs with beautiful data visualizations.",
-      image:
-        "https://via.placeholder.com/400x250/DC2626/FFFFFF?text=Weather+App",
-      technologies: ["React", "Chart.js", "OpenWeather API"],
-      github: "https://github.com/yourusername/weatherapp",
-      live: "https://your-weather-demo.com",
-    },
+    
   ];
 
   const containerVariants = {
@@ -80,20 +76,14 @@ const Projects = () => {
               whileHover={{ y: -10 }}
               className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              
-
               <div className="p-6">
-                  <a
-                    href={project.github}
-                    target="_blank">
-
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -103,7 +93,31 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                </a>
+
+                <div className="flex gap-4 mt-2">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <Github size={18} />
+                      <span className="text-sm">GitHub</span>
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <ExternalLink size={18} />
+                      <span className="text-sm">Live Demo</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

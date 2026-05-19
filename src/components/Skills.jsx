@@ -17,6 +17,9 @@ import {
   SiFirebase,
   SiSwagger,
   SiLinux,
+  SiNextdotjs,
+  SiReactivex,
+  SiPostman,
 } from "react-icons/si";
 
 import { FaJava, FaSwift, FaAndroid } from "react-icons/fa";
@@ -30,12 +33,16 @@ const skillGroups = [
       { name: "Java", icon: FaJava },
       { name: "Kotlin", icon: SiKotlin },
       { name: "SwiftUI", icon: FaSwift },
+      // { name: "C", icon: SiC },
+      // { name: "C++", icon: SiCplusplus },
+      // { name: "C#", icon: SiCsharp },
     ],
   },
   {
     title: "Frontend & Mobile",
     skills: [
       { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
       { name: "React Native", icon: SiReact },
       { name: "Jetpack Compose", icon: FaAndroid },
     ],
@@ -47,6 +54,7 @@ const skillGroups = [
       { name: "NestJS", icon: SiNestjs },
       { name: "Express.js", icon: SiExpress },
       { name: "Spring Boot", icon: SiSpringboot },
+      // { name: ".NET", icon: SiDotnet },
     ],
   },
   {
@@ -55,6 +63,7 @@ const skillGroups = [
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "MongoDB", icon: SiMongodb },
       { name: "MySQL", icon: SiMysql },
+      
     ],
   },
   {
@@ -65,16 +74,15 @@ const skillGroups = [
       { name: "GitHub", icon: SiGithub },
       { name: "Firebase", icon: SiFirebase },
       { name: "Swagger", icon: SiSwagger },
+      { name: "postman", icon: SiPostman },
     ],
   },
 ];
-
 
 const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
