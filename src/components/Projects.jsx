@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "RepoLens — AI Repository Analyzer",
+      title: "RepoLens | AI Repository Analyzer",
       description:
         "A full-stack AI-powered GitHub repository analyzer. Paste any repo URL to get instant insights into code quality, tech stack, security risks, and improvement suggestions. Supports GitHub OAuth for private repository access.",
       technologies: [
