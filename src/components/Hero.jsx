@@ -72,7 +72,7 @@ const Hero = () => {
               View My Work
             </button>
             <a
-              href="https://drive.google.com/file/d/1RyUrWEYnd5RpsL9VkrveQZOw1GlIIM2j/view?usp=sharing"
+              href="https://drive.google.com/file/d/11Uqe_D_89mPdQYrQnPhcbkl7JIDZupGf/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center gap-2"

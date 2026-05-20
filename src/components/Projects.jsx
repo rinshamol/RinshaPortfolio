@@ -5,6 +5,26 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "RepoLens — AI Repository Analyzer",
+      description:
+        "A full-stack AI-powered GitHub repository analyzer. Paste any repo URL to get instant insights into code quality, tech stack, security risks, and improvement suggestions. Supports GitHub OAuth for private repository access.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Spring Boot",
+        "Java",
+        "Docker",
+        "OpenRouter AI",
+        "GitHub OAuth",
+        "Render",
+        "Vercel",
+      ],
+      github: "https://github.com/rinshamol/repo-lens-frontent",
+      live: "https://repo-lens-frontent.vercel.app",
+    },
+    {
       title: "Recipe Finder App",
       description:
         "A responsive React-based recipe finder that lets users search, explore, and view detailed cooking instructions, ingredients, and nutritional info using real-time Spoonacular API data.",
@@ -28,7 +48,6 @@ const Projects = () => {
       github: "https://github.com/rinshamol/Static-Dropbox",
       live: "https://r1-dropbo-clone.netlify.app",
     },
-    
   ];
 
   const containerVariants = {
