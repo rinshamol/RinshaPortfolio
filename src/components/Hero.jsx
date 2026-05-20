@@ -24,7 +24,7 @@ const Hero = () => {
           className="space-y-8"
         >
           {/* Profile Image */}
-          <motion.div
+          {/* <motion.div
             initial={{ scale: 1 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -35,7 +35,7 @@ const Hero = () => {
               alt="Profile"
               className="w-full h-full object-cover"
             />
-          </motion.div>
+          </motion.div> */}
 
           <motion.h1
             initial={{ opacity: 0 }}
