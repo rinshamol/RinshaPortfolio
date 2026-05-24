@@ -17,6 +17,13 @@
   --danger-color: #dc3545;
 }
 
+html, body, #root {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 /* Dark theme variables */
 [data-theme="dark"] {
   --bg-primary: #1a1a1a;
